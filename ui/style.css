@@ -20,3 +20,8 @@ body {
     height: 200px;
 }
 
+p.try {
+	text-decoration:underline;
+	color:indigo;
+	font-style:italic;
+	}
