@@ -10,9 +10,6 @@ button.onclick = function () {
            }
        } 
     };
-    var span = document.getElementById('count');
-    span.innerHTML = num.toString();
-    
     request.open('GET', 'http://ktssaiteja.imad.hasura-app.io/counter', true);
     request.send(null);
 };
