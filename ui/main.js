@@ -6,7 +6,7 @@ button.onclick = function () {
            if(request.status===200){
                var num=request.responseText;
                var span = document.getElementById('count');
-               span.innerHTML = num.toString();
+               span.innerHTML = num;
            }
        } 
     };
