@@ -3,6 +3,24 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 
+
+
+function createTemplate(data) {
+    var title=data.title;
+    var content=data.content;
+var htmlTemplate = `
+<html>
+<head>
+</head>
+<body>
+<h1>${title}</h1>
+<div>${content}</div>
+</body>
+</html>
+`;
+ return htmlTemplate;
+}
+
 var config = {
     user: 'ktssaiteja',
     database: 'ktssaiteja',
