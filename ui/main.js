@@ -13,8 +13,7 @@ button.onclick = function () {
     request.open('GET', 'http://ktssaiteja.imad.hasura-app.io/counter', true);
     request.send(null);
 };*/
-window.load = function (){
-    var lbutton = document.getElementById('submit_btn');
+var lbutton = document.getElementById('submit_btn');
 lbutton.onclick = function () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -38,5 +37,4 @@ lbutton.onclick = function () {
     request.open('POST', 'http://ktssaiteja.imad.hasura-app.io/login', true);
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(JSON.stringify({username: username, password: password}));
-};
 };
