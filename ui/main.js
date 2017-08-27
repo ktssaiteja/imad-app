@@ -13,8 +13,8 @@ button.onclick = function () {
     request.open('GET', 'http://ktssaiteja.imad.hasura-app.io/counter', true);
     request.send(null);
 };
-var button1 = document.getElementById('submit_btn');
-button1.onclick = function () {
+var lbutton = document.getElementById('submit_btn');
+lbutton.onclick = function () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
        if(request.readyState===XMLHttpRequest.DONE){
